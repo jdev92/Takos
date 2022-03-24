@@ -1,0 +1,594 @@
+* {
+    box-sizing:border-box;
+}
+
+html {
+        font-size:62.5%;
+}
+
+:root {
+    --color1:rgb(221, 13, 13); /*rouge*/
+    --color2:#413f3b; /*navbar*/
+}
+
+/*************************************************************************************
+GENERALITES
+*************************************************************************************/
+
+body {
+    font-size: 1.8rem;
+    line-height:2rem;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+main {
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--color1);
+}
+
+h3 {
+    color: var(--color1);
+}
+
+/*************************************************************************************
+HEADER
+*************************************************************************************/
+.container-nav {
+    background-color: var(--color2);
+}
+
+header .container-nav {
+    display: flex;
+    justify-content: space-around;
+	align-items: center; 
+    background-color: var(--color2);
+}
+
+header {
+    padding: 3rem 0 2rem 0;
+}
+
+nav a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    transition: all .7s linear;
+}
+
+nav a:hover {
+    color: var(--color1);
+}
+
+nav ul {
+    display:flex;
+    list-style: none;
+    flex-wrap: wrap;
+} 
+
+.title {
+    font-size: 5rem;
+    font-weight:bolder;
+    color: var(--color1);
+}
+
+/***************************************************************
+HOME
+***************************************************************/
+.form {
+    flex-wrap: wrap;
+}
+
+main div.intro{
+    padding-top: 1rem;
+}
+
+.form .page input[type="search"] {
+    padding: 3rem;
+    margin-bottom: 5rem;
+    outline: none;
+    box-shadow:0 0 5px black;
+    border-radius: 1rem;
+    border:black 1px solid;
+}
+
+.home img {
+    width:20%;
+}
+
+
+/*************************************************************************************
+PAGE ACCUEIL
+*************************************************************************************/
+.form-command {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nextCommande {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.page {
+    display: none;
+}
+
+.headerCommand {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pageNum {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.active {
+    color: #fff;
+    background-color: var(--color1);
+}
+
+.page img {
+    width: 20%;
+}
+
+/*************************************************************************************
+SERVICES
+*************************************************************************************/
+
+.application {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.appRight {
+    max-width: 25rem;
+}
+
+.appRight img {
+    max-width:22rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* slider*/
+.slider-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slider-container img {
+    width: 100%;
+       
+}
+
+.slide {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--color1);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.title-img {
+    color: black;
+    font-size: 30px;
+    padding: 5px 12px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+
+/************************************************************************************
+REGISTER/LOGIN
+************************************************************************************/
+
+.formaulaire {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form h2{
+    color: var(--color1);
+    margin-bottom: 5rem;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    flex-wrap: wrap;
+}
+
+.input input[type="email"], input[type="password"], input[type="text"] {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    outline: none;
+    box-shadow:0 0 5px black;
+    border-radius: 1rem;
+    border:black 1px solid;
+}
+
+.btn {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.register {
+    margin-bottom: 2rem;
+}
+
+form button {
+    padding: 1rem 2rem;
+	cursor: pointer;
+    border-radius: 1rem;
+    box-shadow:0 0 5px black;
+	border: none;
+	font-size: 1.6rem;
+	background-color: floralwhite;
+    border:black 1px solid;
+}
+
+form button:hover {
+    color: white;
+	background-color: var(--color1) ;
+}
+
+.register a {
+    color: var(--color1);
+}
+
+/*************************************************************************************
+INFOS / TARIFS
+*************************************************************************************/
+table{
+    margin: auto;
+}
+
+.tarif {
+    padding: 1rem;
+    border: 1px solid black;
+
+}
+
+.tarif thead {
+    text-align: center;
+}
+
+.tarif thead tr{
+    border: 1px solid black;
+}
+
+.tarif tr {
+    text-align: center;
+    
+}
+
+.tarif td, th {
+    border: 1px solid black;
+} 
+
+.tarif tbody td:nth-child(1) {
+    font-weight: bold;
+}
+
+.forfait {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.roissy {
+    width: 35rem;
+    position: relative;
+    margin: 1rem;
+    overflow: hidden;
+    transition: all 0.5s;
+    border: 1px solid black;
+    /* box-shadow: 0 0 5px black;
+    border-radius: 1rem; */
+}
+
+.roissy:hover {
+    box-shadow: 0 0 5px black;
+    border-radius: 1rem;
+}
+
+.roissy img {
+    display: block;
+}
+
+.prixRoissy {
+    box-shadow: 0 0 5px black;
+    border-radius: 1rem;
+}
+
+.roissy p {
+    margin: 0;
+    text-align: center;
+    
+}
+
+.roissy .prixRoissy {
+    width: 10rem;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: -100px;
+    transition: all 0.5s;
+}
+
+.roissy:hover .prixRoissy {
+    transform: translateX(100px);
+}
+
+.orly {
+    width: 35rem;
+    position: relative;
+    margin: 1rem;
+    overflow: hidden;
+    transition: all 0.5s;
+    border: 1px solid black;
+}
+
+.orly:hover {
+    box-shadow: 0 0 5px black;
+    border-radius: 1rem;
+}
+
+.orly img {
+    display: block;
+}
+
+.prixOrly {
+    box-shadow: 0 0 5px black;
+    border-radius: 1rem;
+}
+
+.orly p {
+    margin: 0;
+    text-align: center;
+    
+}
+
+.orly .prixOrly {
+    width: 10rem;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: -100px;
+    transition: all 0.5s;
+}
+
+.orly:hover .prixOrly {
+    transform: translateX(100px);
+}
+
+.imgForfait img {
+    max-width: 30rem;
+}
+
+/************************************************************************************
+RESERVATION
+************************************************************************************/
+.tableReservation th {
+    border: none;
+}
+
+.tableReservation .btn a{
+    padding: 1rem 2rem;
+	cursor: pointer;
+    border-radius: 1rem;
+    box-shadow:0 0 5px black;
+	border: none;
+	font-size: 1.6rem;
+	background-color: floralwhite;
+    border:black 1px solid;
+}
+
+.tableReservation .btn a:hover {
+    background-color: var(--color1);
+    color:#fff;
+}
+
+
+/*************************************************************************************
+CONTACT
+*************************************************************************************/
+textarea{
+    box-shadow: 0 0 5px black;
+    border-radius: 1rem;
+    border:black 1px solid;
+}
+
+.formaulaire input{
+    width: 35%;
+}
+
+
+/*************************************************************************************
+FOOTER
+*************************************************************************************/
+footer {
+    background-color: var(--color2);
+    padding: 6rem;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.row li{
+    list-style: none;
+}
+
+.liens {
+    text-align: center;
+}
+
+.contats {
+    text-align: center;
+}
+
+.reseaux ul li {
+    display: inline-block;
+}
+
+div.app {
+    text-align: center;
+}
+
+.app li {
+    list-style: none;
+    display: inline-block;
+}
+
+.app h3 {
+    padding-left: 4rem;
+}
+
+.liens a, .contacts p, .reseaux i {
+    color: white;
+}
+
+.contacts i {
+    color: var(--color1);
+}
+
+.liens a:hover, .reseaux i:hover {
+    color: var(--color1);
+}
+
+footer p{
+    text-align: center;
+    color: var(--color1);
+}
+
+/**************************************************************************************
+VERSION MOBILE
+**************************************************************************************/
+@media screen and (max-width: 480px ) {
+
+    .title a{
+        text-align: center;
+    }
+    nav ul {
+        display:block;
+        list-style: none;
+        text-align: center;
+        margin-top: 2rem;
+        border-top: 1px solid white;
+        padding: 0;
+    }
+    
+    nav a {
+        /* display: block; */
+        color: white;
+        background-color: var(--color2);
+        padding: 1rem 2rem;
+        border-bottom: 1px solid white;
+        transition: all .7s linear;
+    }
+    
+    nav a:hover, 
+    nav a:focus {
+        background-color: var(--color1);
+        color: white;
+    }
+    
+    
+    .forfait {
+        display: block;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    footer .row{
+          display:block;
+          text-align: center;
+    } 
+    
+}
+
+/*************************************************************************************
+VERSION TABLETTE
+*************************************************************************************/
+@media screen and (max-width: 760px){
+    nav ul {
+        display:block;
+        list-style: none;
+        text-align: center;
+        margin-top: 2rem;
+        border-top: 1px solid white;
+        padding: 0;
+    }
+    
+    nav a {
+        /* display: block; */
+        color: white;
+        background-color: var(--color2);
+        padding: 1rem 2rem;
+        border-bottom: 1px solid ;
+        transition: all .7s linear;
+    }
+    
+    nav a:hover, 
+    nav a:focus {
+        background-color: var(--color1);
+        color: white;
+    }
+    
+    
+    .forfait {
+        display: block;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+}
